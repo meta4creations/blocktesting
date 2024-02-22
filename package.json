@@ -1,0 +1,24 @@
+{
+  "name": "mtphrblocktesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "lint:js": "wp-scripts lint-js ./src",
+    "format:js": "wp-scripts format-js ./src",
+    "lint:css": "wp-scripts lint-style ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "25.1.0",
+    "import-glob": "^1.5.0",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "swiper": "11.0.5"
+  }
+}

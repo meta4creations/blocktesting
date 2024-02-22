@@ -1,0 +1,24 @@
+{
+  "apiVersion": 3,
+  "name": "block-testing/swiper-slider",
+  "title": "Swiper Slider",
+  "description": "Slider for Groups and Covers",
+  "icon": "leftright",
+  "category": "text",
+  "textdomain": "block-testing",
+  "supports": {
+    "color": {
+      "link": false,
+      "__experimentalDefaultControls": {
+        "text": true
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./front.css",
+  "viewScript": [
+    "jquery",
+    "file:./front.js"
+  ]
+}

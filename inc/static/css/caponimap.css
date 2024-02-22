@@ -1,0 +1,102 @@
+.caponi-map {
+  flex: 1;
+  background: #f0f0f0; }
+  .caponi-map__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 600px; }
+  .caponi-map__info {
+    padding: 1rem;
+    margin: 0; }
+    .caponi-map__info.error {
+      color: #fff;
+      background: #dc3545; }
+
+.caponi-map {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .caponi-map__container {
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 100px); }
+  .caponi-map__image {
+    display: block;
+    line-height: 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .caponi-map__description {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    z-index: 999999999;
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: calc(100% - 60px); }
+    .caponi-map__description__inner {
+      display: flex;
+      flex-direction: column;
+      max-height: 100%;
+      height: 100%; }
+    .caponi-map__description__heading {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .caponi-map__description__heading h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0; }
+    .caponi-map__description__footer {
+      margin-top: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 10px; }
+    .caponi-map__description__readmore {
+      display: block;
+      padding: 10px;
+      background: #346474;
+      color: #FFF;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold; }
+      .caponi-map__description__readmore:hover {
+        color: #FFF; }
+    .caponi-map__description__close {
+      cursor: pointer; }
+      .caponi-map__description__close img {
+        width: 20px;
+        height: 20px; }
+    .caponi-map__description__content {
+      flex: 1;
+      overflow-y: scroll;
+      font-size: 16px;
+      line-height: 24px;
+      -webkit-overflow-scrolling: touch; }
+      .caponi-map__description__content__scroll {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        .caponi-map__description__content__scroll > *:last-child {
+          margin-bottom: 0; }
+        .caponi-map__description__content__scroll iframe {
+          max-width: 100%; }
+        .caponi-map__description__content__scroll .wp-post-image {
+          display: block;
+          line-height: 0;
+          margin-bottom: 10px; }
+
+.post-content .caponi-map__description__materials,
+.post-content .caponi-map__description__artist {
+  margin-bottom: 0; }
+
+.post-content .caponi-map__description__materials,
+.post-content .caponi-map__description__artist,
+.post-content .caponi-map__description__date {
+  font-size: 0.9em; }

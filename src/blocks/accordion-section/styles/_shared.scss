@@ -1,0 +1,105 @@
+$header_color: #fff;
+$title_font: "Arial, sans-serif";
+$header_bg_color: blue;
+$header_bg_color_hover: purple;
+
+.wp-block-block-testing-accordion-section {
+  box-sizing: border-box;
+  margin-top: 25px;
+  &:first-child {
+    margin-top: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  &:hover {
+    .wp-block-block-testing-accordion-section__header {
+      background: $header_bg_color_hover;
+    }
+  }
+  &__header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    transition-duration: 0.5s;
+    font-size: 18px;
+    color: $header_color;
+    background: $header_bg_color;
+    border-radius: 20px;
+    padding: 20px 60px 20px 13px;
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: currentColor;
+      width: 30px;
+      height: 23px;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      transition: transform 0.2s ease-in;
+      svg {
+        fill: currentColor;
+      }
+    }
+    h3 {
+      width: 100%;
+      font-family: $title_font;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 28px;
+      color: currentColor;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      a {
+        color: inherit;
+      }
+    }
+    &:hover {
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &.open {
+    .wp-block-block-testing-accordion-section__header {
+      &__icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__body {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transition: height 0.5s ease;
+    &__content {
+      max-width: 987px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      > *:first-child {
+        margin-top: 0;
+      }
+      > *:last-child {
+        margin-bottom: 0;
+      }
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+    iframe {
+      width: 100%;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+}
